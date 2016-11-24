@@ -1107,31 +1107,6 @@ namespace VKontakte.API.Models
 	//	NSNumber alcohol { get; set; }
 	//}
 
-	// @interface VKBanInfo : VKApiObject
-	[BaseType (typeof(VKApiObject))]
-	interface VKBanInfo
-	{
-		// @property (nonatomic, strong) NSNumber * admin_id;
-		[Export ("admin_id", ArgumentSemantic.Strong)]
-		NSNumber admin_id { get; set; }
-
-		// @property (nonatomic, strong) NSNumber * date;
-		[Export ("date", ArgumentSemantic.Strong)]
-		NSNumber date { get; set; }
-
-		// @property (nonatomic, strong) NSNumber * reason;
-		[Export ("reason", ArgumentSemantic.Strong)]
-		NSNumber reason { get; set; }
-
-		// @property (nonatomic, strong) NSString * comment;
-		[Export ("comment", ArgumentSemantic.Strong)]
-		string comment { get; set; }
-
-		// @property (nonatomic, strong) NSNumber * end_date;
-		[Export ("end_date", ArgumentSemantic.Strong)]
-		NSNumber end_date { get; set; }
-	}
-
 	// @interface VKLastSeen : VKApiObject
 	[BaseType (typeof(VKApiObject))]
 	interface VKLastSeen
@@ -1494,10 +1469,6 @@ namespace VKontakte.API.Models
 		// @property (nonatomic, strong) NSNumber * common_count;
 		[Export ("common_count", ArgumentSemantic.Strong)]
 		NSNumber common_count { get; set; }
-
-		// @property (nonatomic, strong) VKBanInfo * ban_info;
-		[Export ("ban_info", ArgumentSemantic.Strong)]
-		VKBanInfo ban_info { get; set; }
 
 		// @property (nonatomic, strong) NSString * name;
 		[Export ("name", ArgumentSemantic.Strong)]
