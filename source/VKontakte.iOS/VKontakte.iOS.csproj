@@ -95,8 +95,6 @@
     <NativeReference Include="..\..\externals\ios\libVK-ios-sdk.a">
       <Kind>Static</Kind>
       <ForceLoad>True</ForceLoad>
-      <Frameworks>CoreGraphics Foundation SafariServices Security UIKit</Frameworks>
-      <LinkerFlags>-all_load -ObjC -lstdc++</LinkerFlags>
     </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />

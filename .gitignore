@@ -8,7 +8,7 @@
 *.sln.docstates
 
 # Repository-specific files
-externals/
+externals/windows
 output/
 tools/
 
